@@ -1,0 +1,398 @@
+@import 'utility.css';
+:root{
+    --primary:#3DCFD3;
+    --DARK:#161616;
+    --PURE:#FFFFFF;
+    --TERNARY:#898989;
+    --LIGHT:#F2F2F2;
+    --secondary:#070606;
+}
+
+body{
+    height: 8000px;
+    font-family: 'Poppins',sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialised;
+}
+header{
+    background: var(--DARK);
+    clip-path: polygon( 0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0 auto;
+
+}
+header nav .left a{
+    text-decoration: none;
+
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+.hero {
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--PURE);
+    margin: -7rem;
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section{
+    padding: 6rem 0;
+}
+section.About .About-me-img{
+    height: 500px;
+}
+section.About h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.About h1 span{
+    color: var(--primary);
+}
+section.About h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.About p{
+    font-family: 'Lato',sans-serif;
+    color: var(--TERNARY);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section.About .social{
+    display: flex;
+}
+section.About .social a{
+    background-color: var(--DARK);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0.6rem;
+    transition: all .3s ease;
+}
+section.About .social a:hover{
+    background: var(--primary);
+}
+section.About .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.secttion-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin: 1rem;
+    line-height: 0.5rem;
+}
+.secttion-heading + p{
+    color: var(--TERNARY);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.secttion-heading span{
+    color: var(--primary);
+}
+section.Servises{
+    background: var(--LIGHT);
+}
+section.Servises .card-wraper{
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+section.Servises .card-wraper .card{
+    background: var(--PURE);
+    padding: 3rem 2rem ;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.Servises .card-wraper .card img{
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+section.Servises .card-wraper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.Servises .card-wraper .card p{
+    font-family: 'Lato' sans-serif;
+    color: var(--TERNARY);
+    line-height: 1.6;
+}
+section.Servises .card-wraper .card:hover{
+    background: var(--DARK);
+}
+section.Servises .card-wraper .card:hover h2, section.Servises .card-wraper .card:hover p{
+    color: var(--PURE);
+}
+section.freelancer{
+    height: 500px;
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--PURE);
+    clip-path: polygon( 0 0,100% 0,100% 100%,67% 80%,0 100%);
+}
+section.freelancer h1{
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+section.freelancer p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+section.review .slider .slide img{
+    height: 140px;
+    object-fit: cover;
+}
+
+section.review .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+section.review .slider .slide p{
+    font-family: 'lato' sans-serif;
+    color: var(--TERNARY);
+    margin-bottom: 1rem;
+}
+section.review .slider .slide span{
+    font-size: 0.8rem;
+}
+section.review .slider-dots .slick-dots{
+    list-style-type: none;
+    display: flex !important;
+    justify-content: center;
+}
+section.review .slider-dots .slick-dots{
+    margin-top: 3rem;
+}
+section.review .slider-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 7px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--TERNARY);
+    border-radius: 50px;
+    cursor: pointer;
+}
+section.review .slider-dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+section.work{
+    background: var(--LIGHT);
+}
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(61, 207,211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--LIGHT);
+    opacity: 0;
+    transition:all 0.3s ease;
+}
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+
+}
+section.blog{
+    background: var(--DARK);
+}
+section.blog .secttion-heading{
+    color: var(--PURE);
+}
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+section.blog .card-wrapper .card .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+section.blog .card-wrapper .card{
+    background: var(--PURE);
+}
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section.blog .card-wrapper .card .card-content h1:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content span{
+    color: var(--TERNARY);
+    font-size: 0.8rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'lato' sans-serif;
+    color: var(--TERNARY);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.readmore{
+    font-size: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.readmore:hover{
+   color: var(--primary); 
+}
+section.blog{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+section.contact-us .card-wrapper .card img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 3rem;
+}
+section.contact-us .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+section.contact-us .card-wrapper .card{
+    text-align: center;
+}
+section.contact-us .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact-us .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--TERNARY);
+    font-weight: 400;
+}
+section.contact-us .container{
+    padding-top: 3rem;
+}
+section.contact-us .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact-us .input-wrap input{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 5rem;
+    border: 1px solid var(--LIGHT);
+}
+section.contact-us .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+section.contact-us .input-wrap-2 input{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border: 1px solid var(--LIGHT);
+}
+section.contact-us .input-wrap-2 textarea{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    height: 13rem;
+    border: 1px solid var(--LIGHT);
+    margin-bottom: 2rem;
+}
+section.contact-us .input-wrap-2 textarea:focus{
+    outline: none;
+}
+section.contact-us input:focus{
+    outline: none;
+}
+section.contact-us .btn-wrapper{
+    text-align: center;
+}
